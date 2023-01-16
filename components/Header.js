@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   FaCartPlus,
   FaHeart,
@@ -11,8 +11,14 @@ import {
 } from 'react-icons/fa';
 import { mainMenu } from '../pages/api/mode';
 import Logo from '../assets/Logo.png';
+import Cart from './view/shop-page/cart';
 
 const Header = () => {
+  const [isCardOpen, setIsCardOpen] = useState(false);
+  const handleSidebarOpen = (condition) => {
+    setIsCardOpen(condition);
+    console.log(condition);
+  };
   return (
     <div className=" fixed top-0 z-50 w-full bg-gradient-to-r from-[#3E002F] to-[#32003B] ">
       <nav className="container flex items-center justify-between  py-4  ">
@@ -72,7 +78,12 @@ const Header = () => {
                 </div>
               </div>
               <div className="grid-span-1 flex items-center justify-center gap-1 px-3">
-                <div className="relative">
+                <div
+                  className="relative"
+                  onClick={() => {
+                    handleSidebarOpen(true);
+                  }}
+                >
                   <FaCartPlus size={24} />
                   <span className="absolute -right-2 -top-1 h-4 w-4 rounded-full bg-rose-500 text-center text-xs">
                     1
@@ -159,6 +170,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
+      <Cart handleSidebarOpen={handleSidebarOpen} isCardOpen={isCardOpen} />
     </div>
   );
 };

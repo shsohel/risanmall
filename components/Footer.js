@@ -4,32 +4,28 @@ import Link from 'next/link';
 import React, { Fragment } from 'react';
 import {
   FaBars,
-  FaCartArrowDown,
-  FaClock,
   FaCopyright,
-  FaFacebook,
   FaFacebookSquare,
   FaHamburger,
-  FaHome,
   FaInstagram,
   FaInstagramSquare,
-  FaLinkedin,
   FaMailBulk,
-  FaMailchimp,
-  FaPhone,
   FaSearch,
   FaShoppingBag,
   FaTimes,
-  FaTimesCircle,
-  FaTwitter,
   FaUserAlt,
-  FaUserCircle,
   FaWpbeginner,
+  FaPhone,
+  FaLinkedin,
   FaYoutube,
+  FaTwitter,
+  FaHome,
+  FaUserCircle,
 } from 'react-icons/fa';
 import { VscMail } from 'react-icons/vsc';
 import Logo from '../assets/Logo.png';
 import { navMenu, secondaryMenu } from '../pages/api/mode';
+import Cart from './view/shop-page/cart';
 
 export const Footer = () => {
   return (
