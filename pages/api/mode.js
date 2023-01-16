@@ -1,3 +1,39 @@
+export const mainMenu = [
+  {
+    id: 'shop',
+    name: 'Shop',
+    link: '/shop',
+    subItem: [],
+  },
+  {
+    id: 'account',
+    name: 'Account',
+    link: '#',
+    subItem: [
+      {
+        id: 'myAccount',
+        name: 'My Account',
+        link: '/login',
+      },
+      {
+        id: 'login',
+        name: 'Login',
+        link: '/login',
+      },
+      {
+        id: 'register',
+        name: 'Register',
+        link: '/register',
+      },
+    ],
+  },
+  {
+    id: 'contact',
+    name: 'Contact',
+    link: '/contact',
+    subItem: [],
+  },
+];
 export const navMenu = [
   {
     id: 'company',

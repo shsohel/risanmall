@@ -7,10 +7,10 @@ import productPC01 from '../../../assets/Product-02.png';
 import { imageLoader } from '../../../utils/utolity';
 const CoverSection = () => {
   return (
-    <header className="mt-[4.5rem] lg:mt-[7.9rem]   ">
-      <div className="grid  lg:grid-cols-7 gap-4 ">
-        <div className=" lg:col-span-4  grid gap-4">
-          <div className=" bg-primary pl-10 gap-4 relative">
+    <header>
+      <div className="grid  gap-4 lg:grid-cols-7 ">
+        <div className=" grid  gap-4 lg:col-span-4">
+          <div className=" relative gap-4 bg-primary pl-10">
             <Image
               className="object-fill"
               // loader={imageLoader}
@@ -18,21 +18,21 @@ const CoverSection = () => {
               alt="product 01"
               src={offerPic}
             />
-            <button className="bg-secondary  hover:bg-primary font-semibold  absolute bottom-0 w-36  right-0 text-2xl p-2">
+            <button className="absolute  bottom-0 right-0  w-36 bg-secondary p-2  text-2xl font-semibold hover:bg-primary">
               Shop Now
             </button>
           </div>
         </div>
-        <div className="lg:col-span-3 grid gap-4">
-          <div className=" flex items-center bg-secondary-light  p-6 gap-4">
+        <div className="grid gap-4 lg:col-span-3">
+          <div className=" flex items-center gap-4  bg-secondary-light p-6">
             <div className=" py-6 ">
-              <h2 className="text-2xl md:text-3xl font-bold uppercase italic">
+              <h2 className="text-2xl font-bold uppercase italic md:text-3xl">
                 Gaming PC
               </h2>
-              <p className=" text-xs mt-2">
+              <p className=" mt-2 text-xs">
                 Deserunt id reprehenderit commodo fugiat .
               </p>
-              <button className="bg-secondary  hover:bg-primary font-semibold  -skew-x-12 w-24 p-1  hover:skew-x-0 mt-2">
+              <button className="mt-2  w-24 -skew-x-12  bg-secondary p-1 font-semibold  hover:skew-x-0 hover:bg-primary">
                 Shop Now
               </button>
             </div>
@@ -46,9 +46,9 @@ const CoverSection = () => {
               />
             </div>
           </div>
-          <div className="grid gap-4 grid-cols-2 ">
-            <div className=" bg-secondary-light text-center relative">
-              <h2 className="text-2xl font-bold  py-2 ">Mobile Phone</h2>
+          <div className="grid grid-cols-2 gap-4 ">
+            <div className=" relative bg-secondary-light text-center">
+              <h2 className="py-2 text-2xl  font-bold ">Mobile Phone</h2>
               <div className="flex justify-center">
                 <Image
                   // loader={imageLoader}
@@ -58,12 +58,12 @@ const CoverSection = () => {
                   src={productPC01}
                 />
               </div>
-              <button className="bg-secondary py-2 opacity-60  hover:bg-primary font-semibold w-full  mt-2 absolute bottom-0 right-0 left-0">
+              <button className="absolute bottom-0 right-0  left-0 mt-2 w-full  bg-secondary py-2 font-semibold opacity-60 hover:bg-primary">
                 Shop Now
               </button>
             </div>
-            <div className=" bg-primary text-center relative">
-              <h2 className="text-2xl font-bold  py-2">Shoes</h2>
+            <div className=" relative bg-primary text-center">
+              <h2 className="py-2 text-2xl  font-bold">Shoes</h2>
               <div className="flex justify-center">
                 <Image
                   // loader={imageLoader}
@@ -73,7 +73,7 @@ const CoverSection = () => {
                   src={productPC02}
                 />
               </div>
-              <button className="bg-secondary py-2 opacity-60 hover:opacity-100 hover:bg-secondary-light font-semibold w-full  mt-2 absolute bottom-0 right-0 left-0">
+              <button className="absolute bottom-0 right-0 left-0 mt-2 w-full bg-secondary  py-2 font-semibold opacity-60 hover:bg-secondary-light hover:opacity-100">
                 Shop Now
               </button>
             </div>

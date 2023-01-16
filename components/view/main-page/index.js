@@ -10,12 +10,14 @@ const MainPage = () => {
   return (
     <>
       <div className="container ">
-        <CoverSection />
-        <ServiceSection />
-        <TwoBannerSection />
-        <FeatureProduct />
-        <SingleBannerSection />
-        <NewArrivalProduct />
+        <div className="mt-[4.5rem] lg:mt-[9rem]">
+          <CoverSection />
+          <ServiceSection />
+          <TwoBannerSection />
+          <FeatureProduct />
+          <SingleBannerSection />
+          <NewArrivalProduct />
+        </div>
       </div>
     </>
   );

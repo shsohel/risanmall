@@ -1,39 +1,39 @@
-import Image from 'next/image';
-import React from 'react';
-import Shop01 from '../../../assets/images/products/sofa-1.png';
-import Shop02 from '../../../assets/images/products/sofa-2.png';
+import Image from "next/image";
+import React from "react";
+import Shop01 from "../../../assets/images/products/sofa-1.png";
+import Shop02 from "../../../assets/images/products/sofa-2.png";
 
 const TwoBannerSection = () => {
   return (
-    <div className="grid md:grid-cols-2 grid-cols-1 gap-6 mb-10">
-      <div className=" flex flex-col-reverse  lg:flex lg:flex-row justify-center lg:justify-between gap-4  bg-primary/20 h-96  lg:h-56 p-8">
+    <div className="mb-10 grid grid-cols-1 gap-6 md:grid-cols-2">
+      <div className=" flex h-96  flex-col-reverse justify-center gap-4 bg-primary/20 p-8  lg:flex lg:h-56  lg:flex-row lg:justify-between">
         <div>
-          <span className="text-primary font-medium text-lg">30% Offer</span>
-          <h4 className=" font-medium text-2xl my-1">Free Shipping</h4>
-          <p className="text-gray-400 font-normal text-base my-2">
+          <span className="text-lg font-medium text-primary">30% Offer</span>
+          <h4 className=" my-1 text-2xl font-medium">Free Shipping</h4>
+          <p className="my-2 text-base font-normal text-gray-400">
             Attractive Natural Furniture
           </p>
-          <button className="w-28 py-2 px-3 rounded-md bg-primary mt-3 hover:bg-secondary hover:border-primary hover:border-2">
+          <button className="mt-3 w-28 rounded-md bg-primary py-2 px-3 hover:border-2 hover:border-primary hover:bg-secondary">
             Shop Now
           </button>
         </div>
         <div className="flex justify-center">
-          <Image width={200} src={Shop01} alt="" priority />
+          <Image width={200} src={Shop01} alt="sfsf" priority />
         </div>
       </div>
-      <div className=" flex flex-col-reverse  lg:flex lg:flex-row justify-center lg:justify-between gap-4  bg-primary/20 h-96  lg:h-56 p-8">
+      <div className=" flex h-96  flex-col-reverse justify-center gap-4 bg-primary/20 p-8  lg:flex lg:h-56  lg:flex-row lg:justify-between">
         <div>
-          <span className="text-primary font-medium text-lg">50% Offer</span>
-          <h4 className=" font-medium text-2xl my-1">Flash Sale</h4>
-          <p className="text-gray-400 font-normal text-base my-2">
+          <span className="text-lg font-medium text-primary">50% Offer</span>
+          <h4 className=" my-1 text-2xl font-medium">Flash Sale</h4>
+          <p className="my-2 text-base font-normal text-gray-400">
             Attractive Natural Furniture
           </p>
-          <button className="w-28 py-2 px-3 rounded-md bg-primary mt-3  hover:bg-secondary hover:border-primary hover:border-2">
+          <button className="mt-3 w-28 rounded-md bg-primary py-2 px-3  hover:border-2 hover:border-primary hover:bg-secondary">
             Shop Now
           </button>
         </div>
         <div className="flex justify-center">
-          <Image width={200} src={Shop02} alt="" priority />
+          <Image width={200} src={Shop02} alt="fdfdfd" priority />
         </div>
       </div>
     </div>

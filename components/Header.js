@@ -2,57 +2,39 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect } from 'react';
 import {
-  Fa500Px,
-  FaBars,
   FaCartPlus,
   FaHeart,
-  FaLocationArrow,
-  FaMapMarked,
-  FaMapMarkedAlt,
+  FaList,
   FaMapMarkerAlt,
-  FaMapPin,
-  FaMapSigns,
   FaSearch,
   FaUserCircle,
 } from 'react-icons/fa';
-import { VscGlobe } from 'react-icons/vsc';
-import { navMenu, primaryMenu } from '../pages/api/mode';
+import { mainMenu } from '../pages/api/mode';
 import Logo from '../assets/Logo.png';
 
 const Header = () => {
-  const handleMenuCollapse = (menuId, authButtonId) => {
-    const menu = document.getElementById(menuId);
-    const findClassList = Object.values(menu?.classList).find(
-      (s) => s === 'hidden'
-    );
-    console.log(JSON.stringify(Object.values(menu?.classList), null, 2));
-    if (findClassList !== undefined) {
-      menu.classList.remove('hidden');
-    } else {
-      menu.classList.add('hidden');
-    }
-  };
-
   return (
-    <div className=" fixed w-full top-0 bg-gradient-to-r to-[#32003B] from-[#3E002F] z-50 ">
-      <nav className="flex items-center container justify-between  py-4  ">
+    <div className=" fixed top-0 z-50 w-full bg-gradient-to-r from-[#3E002F] to-[#32003B] ">
+      <nav className="container flex items-center justify-between  py-4  ">
         <div className="flex-auto">
-          <Image
-            width={250}
-            className="hidden lg:block"
-            src={Logo}
-            alt="book01"
-          />
-          <Image
-            width={100}
-            className="block lg:hidden"
-            src={Logo}
-            alt="book01"
-          />
+          <Link href="/">
+            <Image
+              width={250}
+              className="hidden lg:block"
+              src={Logo}
+              alt="book01"
+            />
+            <Image
+              width={100}
+              className="block lg:hidden"
+              src={Logo}
+              alt="book01"
+            />
+          </Link>
         </div>
         <div className="flex-auto">
-          <div className="hidden lg:flex items-center  justify-between mb-3">
-            <div className="w-5/12 flex relative ">
+          <div className="mb-3 hidden items-center  justify-between lg:flex">
+            <div className="relative flex w-5/12 ">
               <span className="absolute left-4 top-3 text-lg text-gray-400">
                 <FaSearch />
               </span>
@@ -60,9 +42,9 @@ const Header = () => {
               <input
                 type="text"
                 placeholder="Search"
-                className="w-full border text-rose-800 border-rose-700 border-r-0 pl-12 py-2 pr-3  focus:outline-none"
+                className="w-full border border-r-0 border-rose-700 py-2 pl-12 pr-3 text-rose-800  focus:outline-none"
               />
-              <button className=" font-roboto uppercase text-sm bg-rose-700 text-white px-8  hover:bg-transparent hover:text-rose-700 transition">
+              <button className=" bg-rose-700 px-8 font-roboto text-sm uppercase text-white  transition hover:bg-transparent hover:text-rose-700">
                 Search
               </button>
             </div>
@@ -73,7 +55,7 @@ const Header = () => {
                     <FaMapMarkerAlt size={24} />
                   </div>
                   <div>
-                    <div className="text-rose-600 font-bold">Location</div>
+                    <div className="font-bold text-rose-600">Location</div>
                     <div className="text-xs text-white">Chittagong</div>
                   </div>
                 </div>
@@ -84,23 +66,23 @@ const Header = () => {
                     <FaUserCircle size={24} />
                   </div>
                   <div>
-                    <div className="text-rose-600 font-bold">Contact </div>
+                    <div className="font-bold text-rose-600">Contact </div>
                     <div className="text-xs  text-white">+8801811275653</div>
                   </div>
                 </div>
               </div>
-              <div className="grid-span-1 px-3 flex items-center justify-center gap-1">
+              <div className="grid-span-1 flex items-center justify-center gap-1 px-3">
                 <div className="relative">
                   <FaCartPlus size={24} />
-                  <span className="absolute text-xs -right-2 -top-1 h-4 w-4 text-center rounded-full bg-rose-500">
+                  <span className="absolute -right-2 -top-1 h-4 w-4 rounded-full bg-rose-500 text-center text-xs">
                     1
                   </span>
                 </div>
               </div>
-              <div className="grid-span-1 px-3 flex items-center justify-center gap-1">
+              <div className="grid-span-1 flex items-center justify-center gap-1 px-3">
                 <div className="relative">
                   <FaHeart size={24} />
-                  <span className="absolute text-xs -right-2 -top-1 h-4 w-4 text-center rounded-full bg-rose-500">
+                  <span className="absolute -right-2 -top-1 h-4 w-4 rounded-full bg-rose-500 text-center text-xs">
                     1
                   </span>
                 </div>
@@ -109,53 +91,67 @@ const Header = () => {
           </div>
 
           {/* main Menu */}
-          <div className="w-full flex justify-end items-center lg:bg-gradient-to-l from-[#4f085c] to-[#3c0030]">
-            <div className="text-sm hidden lg:flex justify-end divide-x divide-purple-800">
-              {navMenu.map((item, index) => {
+          <div className="flex w-full items-center justify-end from-[#4f085c] to-[#3c0030] lg:bg-gradient-to-l">
+            <div className="hidden justify-end divide-x divide-purple-800 text-sm lg:flex">
+              {mainMenu.map((item, index) => {
                 return (
-                  <Link
+                  <div
                     key={index}
-                    href={item.link}
-                    className="inline-block  text-white hover:text-white  px-5"
+                    className="hover:white group  relative   p-3 text-rose-200  "
                   >
-                    {item.mainItem}
-                  </Link>
+                    <Link href={item.link}>
+                      <>{item.name}</>
+                    </Link>
+                    <span
+                      hidden={!item.subItem.length}
+                      className="absolute left-0 top-full hidden w-48 divide-y divide-rose-400 bg-secondary px-2 opacity-0 shadow-lg shadow-primary   transition duration-700 group-hover:block group-hover:opacity-100"
+                    >
+                      {item.subItem.map((sub, index) => (
+                        <div
+                          className="p-2  hover:text-primary"
+                          key={index + 1}
+                        >
+                          <Link href={sub.link}>{sub.name}</Link>
+                        </div>
+                      ))}
+                    </span>
+                  </div>
                 );
               })}
             </div>
             <div className="flex items-center">
-              <button className="relative lg:hidden   text-rose-200  hover:text-white hover:white hover:bg-rose-900  p-2 ">
+              <button className="hover:white relative   p-2   hover:bg-rose-900 hover:text-white  lg:hidden ">
                 <FaCartPlus size={24} />
-                <span className="absolute text-xs text-center right-0 top-1 h-4 w-4 rounded-full bg-rose-500">
+                <span className="absolute right-0 top-1 h-4 w-4 rounded-full border border-white bg-rose-500 text-center text-xs">
                   1
                 </span>
               </button>
-              <button className="   bg-rose-600 text-rose-200  hover:text-white hover:white hover:bg-rose-600 ml-2 p-3 relative group ">
+              <button className="hover:white group  relative ml-2 bg-rose-600 p-3 text-rose-200 hover:bg-rose-600 hover:text-white ">
                 <div className="flex items-center">
-                  <span className="mr-1 uppercase font-roboto text-xs">
+                  <span className="mr-1 font-roboto text-xs uppercase">
                     All Category
                   </span>
-                  <FaBars />
+                  <FaList />
                 </div>
 
-                <div className="absolute uppercase font-roboto text-xs top-full w-full right-0 hidden group-hover:block opacity-0 group-hover:opacity-100 bg-rose-600 transition duration-300 divide-y divide-dashed divide-rose-400">
+                <div className="absolute top-full right-0 hidden w-full divide-y divide-rose-400 bg-secondary px-1 font-roboto text-xs uppercase opacity-0 shadow-lg shadow-primary transition duration-300 group-hover:block group-hover:opacity-100">
                   <Link
                     href="#"
-                    className="py-1 px-3 flex items-center justify-end hover:bg-secondary-light"
+                    className="flex items-center justify-end py-2 px-3 hover:text-primary"
                   >
-                    T-Shirt
+                    Men
                   </Link>
                   <Link
                     href="#"
-                    className="py-1 px-3 flex items-center justify-end hover:bg-secondary-light"
+                    className="flex items-center justify-end py-2 px-3 hover:text-primary"
                   >
-                    T-Shirt
+                    Women
                   </Link>
                   <Link
                     href="#"
-                    className="py-1 px-3 flex items-center justify-end hover:bg-secondary-light"
+                    className="flex items-center justify-end py-2 px-3 hover:text-primary"
                   >
-                    Pant
+                    Mobile
                   </Link>
                 </div>
               </button>

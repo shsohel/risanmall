@@ -25,6 +25,7 @@ const NewArrivalProduct = () => {
                     className="bg-opacity-75 inline"
                     src={Image05}
                     width={200}
+                    alt=""
                   />
                 </div>
                 <div className="group group-hover:bg-secondary/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-white font-semibold">
@@ -54,7 +55,7 @@ const NewArrivalProduct = () => {
             <div className="basis-full">
               <div className="flex justify-center items-center relative z-0 h-64">
                 <div>
-                  <Image src={Image06} width={200} />
+                  <Image src={Image06} width={200} alt="" />
                 </div>
                 <div className="group group-hover:bg-secondary/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-white font-semibold">
                   <div className="opacity-0 group-hover:opacity-100 bottom-0 absolute bg-primary w-full text-center z-20">
@@ -83,7 +84,7 @@ const NewArrivalProduct = () => {
             <div className="basis-full">
               <div className="flex justify-center items-center relative z-0 h-64">
                 <div>
-                  <Image src={Image03} width={200} />
+                  <Image src={Image03} width={200} alt="" />
                 </div>
                 <div className="group group-hover:bg-secondary/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-white font-semibold">
                   <div className="opacity-0 group-hover:opacity-100 bottom-0 absolute bg-primary w-full text-center z-20">
@@ -112,7 +113,7 @@ const NewArrivalProduct = () => {
             <div className="basis-full">
               <div className="flex justify-center items-center relative z-0 h-64">
                 <div>
-                  <Image src={Image02} width={200} />
+                  <Image src={Image02} width={200} alt="" />
                 </div>
                 <div className="group group-hover:bg-secondary/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-white font-semibold">
                   <div className="opacity-0 group-hover:opacity-100 bottom-0 absolute bg-primary w-full text-center z-20">
@@ -141,7 +142,7 @@ const NewArrivalProduct = () => {
             <div className="basis-full">
               <div className="flex justify-center items-center relative z-0 h-64">
                 <div>
-                  <Image src={Image08} width={200} />
+                  <Image src={Image08} width={200} alt="" />
                 </div>
                 <div className="group group-hover:bg-secondary/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-white font-semibold">
                   <div className="opacity-0 group-hover:opacity-100 bottom-0 absolute bg-primary w-full text-center z-20">
@@ -170,7 +171,7 @@ const NewArrivalProduct = () => {
             <div className="basis-full">
               <div className="flex justify-center items-center relative z-0 h-64">
                 <div>
-                  <Image src={Image01} width={200} />
+                  <Image src={Image01} width={200} alt="" />
                 </div>
                 <div className="group group-hover:bg-secondary/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-white font-semibold">
                   <div className="opacity-0 group-hover:opacity-100 bottom-0 absolute bg-primary w-full text-center z-20">
@@ -199,7 +200,7 @@ const NewArrivalProduct = () => {
             <div className="basis-full">
               <div className="flex justify-center items-center relative z-0 h-64">
                 <div>
-                  <Image src={Image04} width={200} />
+                  <Image src={Image04} width={200} alt="" />
                 </div>
                 <div className="group group-hover:bg-secondary/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-white font-semibold">
                   <div className="opacity-0 group-hover:opacity-100 bottom-0 absolute bg-primary w-full text-center z-20">
@@ -228,7 +229,7 @@ const NewArrivalProduct = () => {
             <div className="basis-full">
               <div className="flex justify-center items-center relative z-0 h-64">
                 <div>
-                  <Image src={Image07} width={200} />
+                  <Image src={Image07} width={200} alt="" />
                 </div>
                 <div className="group group-hover:bg-secondary/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-white font-semibold">
                   <div className="opacity-0 group-hover:opacity-100 bottom-0 absolute bg-primary w-full text-center z-20">

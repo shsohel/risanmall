@@ -106,15 +106,35 @@ a {
   text-decoration: none;
 }
 
-.text-shs{
+/* .text-shs{
   color: white;
-  -webkit-text-fill-color: #FA1B5A; /* Will override color (regardless of order) */
+  -webkit-text-fill-color: #FA1B5A; 
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
-};
+}; */
+
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
 }
+
+@layer components {
+  .size-selector input:checked + label {
+    @apply bg-primary text-white;
+  }
+}
+@layer components {
+  .color-selector input:checked + label {
+    @apply ring-2 ring-primary;
+  }
+}
+
+/* @layer components{
+  .rounded-20px {
+    @apply rounded-20px{
+      border-radius: 0px;
+    }
+  }
+} */
