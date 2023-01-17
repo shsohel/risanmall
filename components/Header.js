@@ -131,7 +131,12 @@ const Header = () => {
               })}
             </div>
             <div className="flex items-center">
-              <button className="hover:white relative   p-2   hover:bg-rose-900 hover:text-white  lg:hidden ">
+              <button
+                onClick={() => {
+                  handleSidebarOpen(true);
+                }}
+                className="hover:white relative   p-2   hover:bg-rose-900 hover:text-white  lg:hidden "
+              >
                 <FaCartPlus size={24} />
                 <span className="absolute right-0 top-1 h-4 w-4 rounded-full border border-white bg-rose-500 text-center text-xs">
                   1
