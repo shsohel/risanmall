@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaCartPlus, FaChevronRight, FaHeart, FaHome } from 'react-icons/fa';
 import Image01 from '../../../assets/images/products/SmallCardProduct_PC.png.thumb.webp';
 import Image02 from '../../../assets/images/products/shoes-5.png';
@@ -7,7 +7,14 @@ import Image04 from '../../../assets/images/products/headphone-2.png';
 import Product01 from '../../../assets/images/products/product1.jpg';
 import { MdStarRate } from 'react-icons/md';
 import Image from 'next/image';
+import { Tab } from '@headlessui/react';
+import RelatedProducts from './related-product';
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ');
+}
+
 const SingleProductPage = () => {
+  const [selectedIndex, setSelectedIndex] = useState(0);
   return (
     <div className="container">
       <div className="mt-[4.5rem] lg:mt-[9rem]">
@@ -295,122 +302,65 @@ const SingleProductPage = () => {
               </div>
             </div>
           </div>
-        </div>
-        <ul
-          className="nav nav-tabs mb-4 flex list-none flex-col flex-wrap border-b-0 pl-0 md:flex-row"
-          id="tabs-tab3"
-          role="tablist"
-        >
-          <li className="nav-item" role="presentation">
-            <a
-              href="#tabs-home3"
-              className="
-      nav-link
-      active
-      my-2
-      block
-      w-full
-      border-x-0
-      border-t-0
-      border-b-2 border-transparent px-6 py-3
-      text-xs
-      font-medium
-      uppercase
-      leading-tight hover:border-transparent
-      hover:bg-gray-100
-      focus:border-transparent
-    "
-              id="tabs-home-tab3"
-              data-bs-toggle="pill"
-              data-bs-target="#tabs-home3"
-              role="tab"
-              aria-controls="tabs-home3"
-              aria-selected="true"
+
+          {/* Tab */}
+          <div className="w-full max-w-full px-2 py-10 sm:px-0">
+            <Tab.Group
+              selectedIndex={selectedIndex}
+              onChange={setSelectedIndex}
             >
-              Home
-            </a>
-          </li>
-          <li className="nav-item" role="presentation">
-            <a
-              href="#tabs-profile3"
-              className="
-      nav-link
-      my-2
-      block
-      w-full
-      border-x-0
-      border-t-0
-      border-b-2
-      border-transparent px-6 py-3 text-xs
-      font-medium
-      uppercase
-      leading-tight
-      hover:border-transparent hover:bg-gray-100
-      focus:border-transparent
-    "
-              id="tabs-profile-tab3"
-              data-bs-toggle="pill"
-              data-bs-target="#tabs-profile3"
-              role="tab"
-              aria-controls="tabs-profile3"
-              aria-selected="false"
-            >
-              Profile
-            </a>
-          </li>
-          <li className="nav-item" role="presentation">
-            <a
-              href="#tabs-messages3"
-              className="
-      nav-link
-      my-2
-      block
-      w-full
-      border-x-0
-      border-t-0
-      border-b-2
-      border-transparent px-6 py-3 text-xs
-      font-medium
-      uppercase
-      leading-tight
-      hover:border-transparent hover:bg-gray-100
-      focus:border-transparent
-    "
-              id="tabs-messages-tab3"
-              data-bs-toggle="pill"
-              data-bs-target="#tabs-messages3"
-              role="tab"
-              aria-controls="tabs-messages3"
-              aria-selected="false"
-            >
-              Messages
-            </a>
-          </li>
-        </ul>
-        <div className="tab-content" id="tabs-tabContent3">
-          <div
-            className="tab-pane fade show active"
-            id="tabs-home3"
-            role="tabpanel"
-            aria-labelledby="tabs-home-tab3"
-          >
-            Tab 1 content button version
+              <Tab.List className="flex space-x-1  ">
+                <Tab
+                  className={({ selected }) =>
+                    classNames(
+                      'rounded-t  border border-b-0 border-secondary-light px-3 py-2 text-sm font-medium leading-5 text-blue-700',
+                      '  focus:outline-none focus:ring-0',
+                      selected
+                        ? 'bg-white shadow '
+                        : 'text-blue-100 hover:bg-white/[0.12] hover:text-white'
+                    )
+                  }
+                >
+                  <div>Description</div>
+                </Tab>
+                <Tab
+                  className={({ selected }) =>
+                    classNames(
+                      'rounded-t  border border-b-0 border-secondary-light px-3 py-2 text-sm font-medium leading-5 text-blue-700',
+                      '  focus:outline-none focus:ring-0',
+                      selected
+                        ? 'bg-white shadow '
+                        : 'text-blue-100 hover:bg-white/[0.12] hover:text-white'
+                    )
+                  }
+                >
+                  <div>Comments</div>
+                </Tab>
+                <Tab
+                  className={({ selected }) =>
+                    classNames(
+                      'rounded-t  border border-b-0 border-secondary-light px-3 py-2 text-sm font-medium leading-5 text-blue-700',
+                      '  focus:outline-none focus:ring-0',
+                      selected
+                        ? 'bg-white shadow '
+                        : 'text-blue-100 hover:bg-white/[0.12] hover:text-white'
+                    )
+                  }
+                >
+                  <div>Rating</div>
+                </Tab>
+              </Tab.List>
+              <Tab.Panels className="min-h-fit border border-secondary-light ">
+                <Tab.Panel>
+                  <div className="h-28"></div>
+                </Tab.Panel>
+                <Tab.Panel>Content 2</Tab.Panel>
+                <Tab.Panel>Content 3</Tab.Panel>
+              </Tab.Panels>
+            </Tab.Group>
           </div>
-          <div
-            className="tab-pane fade"
-            id="tabs-profile3"
-            role="tabpanel"
-            aria-labelledby="tabs-profile-tab3"
-          >
-            Tab 2 content button version
-          </div>
-          <div
-            className="tab-pane fade"
-            id="tabs-messages3"
-            role="tabpanel"
-            aria-labelledby="tabs-profile-tab3"
-          >
-            Tab 3 content button version
+          <div className="w-full max-w-full px-2 py-10 sm:px-0">
+            <RelatedProducts />
           </div>
         </div>
       </div>

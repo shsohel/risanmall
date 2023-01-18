@@ -8,12 +8,17 @@ const Sidebar = (props) => {
     children,
     FooterComponent,
     handleSidebarModal,
+    title,
     isOpen = false,
   } = props;
 
   return (
     <Transition.Root show={isOpen} as={Fragment}>
-      <Dialog as="div" className="relative z-50" onClose={handleSidebarModal}>
+      <Dialog
+        as="div"
+        className="relative z-50 text-white"
+        onClose={handleSidebarModal}
+      >
         <Transition.Child
           as={Fragment}
           enter="ease-in-out duration-500"
@@ -30,6 +35,7 @@ const Sidebar = (props) => {
           <div className="absolute inset-0 overflow-hidden">
             <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
               <Transition.Child
+                entered="left"
                 as={Fragment}
                 enter="transform transition ease-in-out duration-500 sm:duration-700"
                 enterFrom="translate-x-full"
@@ -39,12 +45,12 @@ const Sidebar = (props) => {
                 leaveTo="translate-x-full"
               >
                 <Dialog.Panel className="pointer-events-auto w-screen max-w-md">
-                  <div className="flex h-full flex-col overflow-y-scroll bg-white shadow-xl">
+                  <div className="flex h-full flex-col overflow-y-scroll bg-secondary shadow-xl">
                     <div className="flex-1 overflow-y-auto py-6 px-4 sm:px-6">
                       <div className="">
                         <div className="flex items-center justify-between">
-                          <Dialog.Title className="text-lg font-medium text-gray-900">
-                            Cart
+                          <Dialog.Title className="text-lg font-medium text-white">
+                            {title}
                           </Dialog.Title>
                           <div className="ml-3 flex h-7 items-center">
                             <button

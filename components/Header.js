@@ -12,13 +12,15 @@ import {
 import { mainMenu } from '../pages/api/mode';
 import Logo from '../assets/Logo.png';
 import Cart from './view/shop-page/cart';
+import CartMobilePopOver from './view/shop-page/cart-mobile';
 
 const Header = () => {
   const [isCardOpen, setIsCardOpen] = useState(false);
+  const [totalCartItem, setTotalCartItem] = useState(0);
   const handleSidebarOpen = (condition) => {
     setIsCardOpen(condition);
-    console.log(condition);
   };
+  console.log(totalCartItem);
   return (
     <div className=" fixed top-0 z-50 w-full bg-gradient-to-r from-[#3E002F] to-[#32003B] ">
       <nav className="container flex items-center justify-between  py-4  ">
@@ -78,7 +80,7 @@ const Header = () => {
                 </div>
               </div>
               <div className="grid-span-1 flex items-center justify-center gap-1 px-3">
-                <div
+                {/* <div
                   className="relative"
                   onClick={() => {
                     handleSidebarOpen(true);
@@ -88,7 +90,8 @@ const Header = () => {
                   <span className="absolute -right-2 -top-1 h-4 w-4 rounded-full bg-rose-500 text-center text-xs">
                     1
                   </span>
-                </div>
+                </div> */}
+                <CartMobilePopOver />
               </div>
               <div className="grid-span-1 flex items-center justify-center gap-1 px-3">
                 <div className="relative">
@@ -138,8 +141,8 @@ const Header = () => {
                 className="hover:white relative   p-2   hover:bg-rose-900 hover:text-white  lg:hidden "
               >
                 <FaCartPlus size={24} />
-                <span className="absolute right-0 top-1 h-4 w-4 rounded-full border border-white bg-rose-500 text-center text-xs">
-                  1
+                <span className="absolute -right-1 top-0 h-5 w-5 rounded-full border border-white bg-rose-500 text-center text-xs">
+                  {totalCartItem}
                 </span>
               </button>
               <button className="hover:white group  relative ml-2 bg-rose-600 p-3 text-rose-200 hover:bg-rose-600 hover:text-white ">
@@ -175,7 +178,11 @@ const Header = () => {
           </div>
         </div>
       </nav>
-      <Cart handleSidebarOpen={handleSidebarOpen} isCardOpen={isCardOpen} />
+      <Cart
+        handleSidebarOpen={handleSidebarOpen}
+        setTotalCartItem={setTotalCartItem}
+        isCardOpen={isCardOpen}
+      />
     </div>
   );
 };

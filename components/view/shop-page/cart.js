@@ -1,7 +1,8 @@
-import { Fragment, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { RxCross1 } from 'react-icons/rx';
 import Sidebar from '../../custom/Sidebar';
+import Image from 'next/image';
 // import { XMarkIcon } from '@heroicons/react/24/outline';
 
 const products = [
@@ -41,32 +42,26 @@ const products = [
     imageAlt:
       'Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch.',
   },
-  {
-    id: 3,
-    name: 'Medium Stuff Satchel',
-    href: '#',
-    color: 'Blue',
-    price: '$32.00',
-    quantity: 1,
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-02.jpg',
-    imageAlt:
-      'Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch.',
-  },
+
   // More products...
 ];
 
 export default function Cart(props) {
-  const { handleSidebarOpen, isCardOpen } = props;
+  const { handleSidebarOpen, isCardOpen, setTotalCartItem } = props;
+
+  useEffect(() => {
+    setTotalCartItem(products.length);
+  }, [products.length]);
 
   return (
     <>
       <Sidebar
+        title="Cart"
         isOpen={isCardOpen}
         handleSidebarModal={handleSidebarOpen}
         FooterComponent={
           <div className="border-t border-gray-200 py-6 px-4 sm:px-6">
-            <div className="flex justify-between text-base font-medium text-gray-900">
+            <div className="flex justify-between text-base font-medium ">
               <p>Subtotal</p>
               <p>$262.00</p>
             </div>
@@ -76,7 +71,7 @@ export default function Cart(props) {
             <div className="mt-6">
               <a
                 href="#"
-                className="flex items-center justify-center rounded-md border border-transparent bg-primary px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-secondary"
+                className="flex items-center justify-center  border border-transparent bg-primary px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-secondary"
               >
                 Checkout
               </a>
@@ -86,7 +81,7 @@ export default function Cart(props) {
                 or
                 <button
                   type="button"
-                  className="font-medium text-indigo-600 hover:text-indigo-500"
+                  className="font-medium hover:text-indigo-500"
                   onClick={() => setOpen(false)}
                 >
                   Continue Shopping
@@ -103,7 +98,9 @@ export default function Cart(props) {
               {products.map((product) => (
                 <li key={product.id} className="flex py-6">
                   <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
-                    <img
+                    <Image
+                      height={80}
+                      width={80}
                       src={product.imageSrc}
                       alt={product.imageAlt}
                       className="h-full w-full object-cover object-center"
@@ -112,23 +109,38 @@ export default function Cart(props) {
 
                   <div className="ml-4 flex flex-1 flex-col">
                     <div>
-                      <div className="flex justify-between text-base font-medium text-gray-900">
+                      <div className="flex justify-between text-base font-medium ">
                         <h3>
                           <a href={product.href}>{product.name}</a>
                         </h3>
                         <p className="ml-4">{product.price}</p>
                       </div>
-                      <p className="mt-1 text-sm text-gray-500">
+                      <p className="mt-1 text-sm text-primary">
                         {product.color}
                       </p>
                     </div>
                     <div className="flex flex-1 items-end justify-between text-sm">
-                      <p className="text-gray-500">Qty {product.quantity}</p>
+                      <div>
+                        <div className="flex items-center gap-1">
+                          <h5>Qty :</h5>
+                          <div className="flex w-max divide-x divide-gray-300 border">
+                            <div className="flex h-6 w-6 cursor-pointer select-none items-center justify-center text-xl">
+                              -
+                            </div>
+                            <div className="flex h-6 w-6 cursor-pointer select-none items-center justify-center text-base">
+                              {product.quantity}
+                            </div>
+                            <div className="flex h-6 w-6 cursor-pointer select-none items-center justify-center text-xl">
+                              +
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
                       <div className="flex">
                         <button
                           type="button"
-                          className="font-medium text-indigo-600 hover:text-indigo-500"
+                          className="font-medium text-primary hover:text-secondary-light"
                         >
                           Remove
                         </button>
