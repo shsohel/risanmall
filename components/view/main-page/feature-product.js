@@ -17,11 +17,11 @@ const FeatureProduct = () => {
   };
   return (
     <div className="py-3">
-      <h2 className="mb-10 bg-gradient-to-l from-[white]/0 to-primary/80 py-1 px-2 text-3xl font-medium  ">
+      <h2 className="mb-10 from-[white]/0 to-primary/80 py-1 px-2 text-3xl font-medium dark:bg-gradient-to-l  ">
         Feature Product
       </h2>
       <div className="w-12/12 mx-auto grid grid-cols-1 justify-center gap-6 md:grid-cols-2 lg:grid-cols-4">
-        <div className="group relative w-full bg-secondary-light">
+        <div className="group relative w-full bg-primary/20 dark:bg-secondary-light">
           <div className="flex flex-row p-3">
             <div className="basis-full">
               <div className="relative z-0 flex h-64 items-center justify-center">
@@ -49,17 +49,17 @@ const FeatureProduct = () => {
                 <p className="text-primary">$ 200.00</p>
               </div>
               <div>
-                <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold  uppercase transition hover:border-primary hover:bg-secondary">
-                  Show Now
+                <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold  uppercase transition hover:border-primary hover:bg-secondary hover:text-white">
+                  Add to Cart
                 </button>
               </div>
             </div>
           </div>
-          <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium">
+          <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium text-white">
             <span> 200 Products</span>
           </div>
         </div>
-        <div className="group relative w-full  bg-secondary-light">
+        <div className="group relative w-full bg-primary/20 dark:bg-secondary-light">
           <div className="flex flex-row p-3">
             <div className="basis-full">
               <div className="relative z-0 flex h-64 items-center justify-center">
@@ -78,17 +78,17 @@ const FeatureProduct = () => {
                 <p className="text-primary">$ 200.00</p>
               </div>
               <div>
-                <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold  uppercase transition hover:border-primary hover:bg-secondary">
-                  Show Now
+                <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold uppercase transition hover:border-primary hover:bg-secondary hover:text-white">
+                  Add to Cart
                 </button>
               </div>
             </div>
           </div>
-          <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium">
+          <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium text-white">
             <span> 200 Products</span>
           </div>
         </div>
-        <div className="group relative w-full  bg-secondary-light">
+        <div className="group relative w-full bg-primary/20 dark:bg-secondary-light">
           <div className="flex flex-row p-3">
             <div className="basis-full">
               <div className="relative z-0 flex h-64 items-center justify-center">
@@ -107,17 +107,17 @@ const FeatureProduct = () => {
                 <p className="text-primary">$ 200.00</p>
               </div>
               <div>
-                <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold  uppercase transition hover:border-primary hover:bg-secondary">
-                  Show Now
+                <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold uppercase transition hover:border-primary hover:bg-secondary hover:text-white">
+                  Add to Cart
                 </button>
               </div>
             </div>
           </div>
-          <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium">
+          <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium text-white">
             <span> 200 Products</span>
           </div>
         </div>
-        <div className="group relative w-full  bg-secondary-light">
+        <div className="group relative w-full bg-primary/20 dark:bg-secondary-light">
           <div className="flex flex-row p-3">
             <div className="basis-full">
               <div className="relative z-0 flex h-64 items-center justify-center">
@@ -136,13 +136,13 @@ const FeatureProduct = () => {
                 <p className="text-primary">$ 200.00</p>
               </div>
               <div>
-                <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold  uppercase transition hover:border-primary hover:bg-secondary">
-                  Show Now
+                <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold uppercase transition hover:border-primary hover:bg-secondary hover:text-white">
+                  Add to Cart
                 </button>
               </div>
             </div>
           </div>
-          <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium">
+          <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium text-white">
             <span> 200 Products</span>
           </div>
         </div>

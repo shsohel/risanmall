@@ -16,7 +16,7 @@ const Sidebar = (props) => {
     <Transition.Root show={isOpen} as={Fragment}>
       <Dialog
         as="div"
-        className="relative z-50 text-white"
+        className="relative z-50 dark:text-white"
         onClose={handleSidebarModal}
       >
         <Transition.Child
@@ -45,11 +45,11 @@ const Sidebar = (props) => {
                 leaveTo="translate-x-full"
               >
                 <Dialog.Panel className="pointer-events-auto w-screen max-w-md">
-                  <div className="flex h-full flex-col overflow-y-scroll bg-secondary shadow-xl">
+                  <div className="flex h-full flex-col overflow-y-scroll bg-white shadow-xl dark:bg-secondary">
                     <div className="flex-1 overflow-y-auto py-6 px-4 sm:px-6">
                       <div className="">
                         <div className="flex items-center justify-between">
-                          <Dialog.Title className="text-lg font-medium text-white">
+                          <Dialog.Title className="text-lg font-medium dark:text-white">
                             {title}
                           </Dialog.Title>
                           <div className="ml-3 flex h-7 items-center">

@@ -16,13 +16,13 @@ function Pagination({
         previousLabel={'Pre'}
         nextLabel={'Next'}
         pageCount={totalPages || 1}
-        activeClassName="bg-primary"
+        activeClassName="text-primary"
         forcePage={currentPage !== 0 ? currentPage - 1 : 0}
         onPageChange={(page) => handlePagination(page)}
         pageClassName={'px-3 border border-secondary-light'}
         // nextLinkClassName={''}
-        nextClassName={'px-1 bg-secondary-light'}
-        previousClassName={'px-1 bg-secondary-light'}
+        nextClassName={'px-1 bg-primary'}
+        previousClassName={'px-1 bg-primary'}
         // previousLinkClassName={'page-link'}
         // pageLinkClassName={''}
         containerClassName={'flex'}

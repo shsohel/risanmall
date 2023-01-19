@@ -11,251 +11,251 @@ import Image08 from '../../../assets/images/products/shoes-4.png';
 
 const NewArrivalProduct = () => {
   return (
-    <div className="py-3 my-3">
-      <h2 className="font-medium text-3xl mb-10 bg-gradient-to-l to-primary/80 from-[white]/0 py-1 px-2  ">
+    <div className="my-3 py-3">
+      <h2 className="mb-10 from-[white]/0 to-primary/80 py-1 px-2 text-3xl font-medium dark:bg-gradient-to-l  ">
         New Product
       </h2>
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 mx-auto justify-center w-12/12">
-        <div className="group bg-secondary-light w-full relative">
+      <div className="w-12/12 mx-auto grid grid-cols-1 justify-center gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="group relative w-full bg-primary/20 dark:bg-secondary-light">
           <div className="flex flex-row p-3">
             <div className="basis-full">
-              <div className="flex justify-center items-center relative z-0 h-64">
+              <div className="relative z-0 flex h-64 items-center justify-center">
                 <div>
                   <Image
-                    className="bg-opacity-75 inline"
+                    className="inline bg-opacity-75"
                     src={Image05}
                     width={200}
                     alt=""
                   />
                 </div>
-                <div className="group group-hover:bg-secondary/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-white font-semibold">
-                  <div className="opacity-0 group-hover:opacity-100 bottom-0 absolute bg-primary w-full text-center z-20">
+                <div className="group absolute inset-0 z-10 flex items-center justify-center text-2xl font-semibold text-white duration-300 group-hover:bg-secondary/50">
+                  <div className="absolute bottom-0 z-20 w-full bg-primary text-center opacity-0 group-hover:opacity-100">
                     <button className="p-1">Quick View</button>
                   </div>
                 </div>
               </div>
 
-              <div className="text-2xl text-center font-semibold">
+              <div className="text-center text-2xl font-semibold">
                 <h3>Nikki Shoes</h3>
                 <p className="text-primary">$ 200.00</p>
               </div>
               <div>
-                <button className="px-3 py-2 border-2 border-secondary hover:border-primary transition hover:bg-secondary  uppercase text-xl font-semibold w-full">
+                <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold uppercase transition hover:border-primary hover:bg-secondary hover:text-white">
                   Add To Cart
                 </button>
               </div>
             </div>
           </div>
-          <div className="absolute -top-3 right-0 h-9 bg-primary w-32 p-1 text-center text-base font-medium">
+          <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium text-white">
             <span> 200 Products</span>
           </div>
         </div>
-        <div className="group bg-secondary-light w-full  relative">
+        <div className="group relative w-full bg-primary/20 dark:bg-secondary-light">
           <div className="flex flex-row p-3">
             <div className="basis-full">
-              <div className="flex justify-center items-center relative z-0 h-64">
+              <div className="relative z-0 flex h-64 items-center justify-center">
                 <div>
                   <Image src={Image06} width={200} alt="" />
                 </div>
-                <div className="group group-hover:bg-secondary/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-white font-semibold">
-                  <div className="opacity-0 group-hover:opacity-100 bottom-0 absolute bg-primary w-full text-center z-20">
+                <div className="group absolute inset-0 z-10 flex items-center justify-center text-2xl font-semibold text-white duration-300 group-hover:bg-secondary/50">
+                  <div className="absolute bottom-0 z-20 w-full bg-primary text-center opacity-0 group-hover:opacity-100">
                     <button className="p-1">Quick View</button>
                   </div>
                 </div>
               </div>
 
-              <div className="text-2xl text-center font-semibold">
+              <div className="text-center text-2xl font-semibold">
                 <h3>Nikki Shoes</h3>
                 <p className="text-primary">$ 200.00</p>
               </div>
               <div>
-                <button className="px-3 py-2 border-2 border-secondary hover:border-primary transition hover:bg-secondary  uppercase text-xl font-semibold w-full">
+                <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold uppercase transition hover:border-primary hover:bg-secondary hover:text-white">
                   Add To Cart
                 </button>
               </div>
             </div>
           </div>
-          <div className="absolute -top-3 right-0 h-9 bg-primary w-32 p-1 text-center text-base font-medium">
+          <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium text-white">
             <span> 200 Products</span>
           </div>
         </div>
-        <div className="group bg-secondary-light w-full relative">
+        <div className="group relative w-full bg-primary/20 dark:bg-secondary-light">
           <div className="flex flex-row p-3">
             <div className="basis-full">
-              <div className="flex justify-center items-center relative z-0 h-64">
+              <div className="relative z-0 flex h-64 items-center justify-center">
                 <div>
                   <Image src={Image03} width={200} alt="" />
                 </div>
-                <div className="group group-hover:bg-secondary/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-white font-semibold">
-                  <div className="opacity-0 group-hover:opacity-100 bottom-0 absolute bg-primary w-full text-center z-20">
+                <div className="group absolute inset-0 z-10 flex items-center justify-center text-2xl font-semibold text-white duration-300 group-hover:bg-secondary/50">
+                  <div className="absolute bottom-0 z-20 w-full bg-primary text-center opacity-0 group-hover:opacity-100">
                     <button className="p-1">Quick View</button>
                   </div>
                 </div>
               </div>
 
-              <div className="text-2xl text-center font-semibold">
+              <div className="text-center text-2xl font-semibold">
                 <h3>Nikki Shoes</h3>
                 <p className="text-primary">$ 200.00</p>
               </div>
               <div>
-                <button className="px-3 py-2 border-2 border-secondary hover:border-primary transition hover:bg-secondary  uppercase text-xl font-semibold w-full">
+                <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold uppercase transition hover:border-primary hover:bg-secondary hover:text-white">
                   Add To Cart
                 </button>
               </div>
             </div>
           </div>
-          <div className="absolute -top-3 right-0 h-9 bg-primary w-32 p-1 text-center text-base font-medium">
+          <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium text-white">
             <span> 200 Products</span>
           </div>
         </div>
-        <div className="group bg-secondary-light w-full relative">
+        <div className="group relative w-full bg-primary/20 dark:bg-secondary-light">
           <div className="flex flex-row p-3">
             <div className="basis-full">
-              <div className="flex justify-center items-center relative z-0 h-64">
+              <div className="relative z-0 flex h-64 items-center justify-center">
                 <div>
                   <Image src={Image02} width={200} alt="" />
                 </div>
-                <div className="group group-hover:bg-secondary/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-white font-semibold">
-                  <div className="opacity-0 group-hover:opacity-100 bottom-0 absolute bg-primary w-full text-center z-20">
+                <div className="group absolute inset-0 z-10 flex items-center justify-center text-2xl font-semibold text-white duration-300 group-hover:bg-secondary/50">
+                  <div className="absolute bottom-0 z-20 w-full bg-primary text-center opacity-0 group-hover:opacity-100">
                     <button className="p-1">Quick View</button>
                   </div>
                 </div>
               </div>
 
-              <div className="text-2xl text-center font-semibold">
+              <div className="text-center text-2xl font-semibold">
                 <h3>Nikki Shoes</h3>
                 <p className="text-primary">$ 200.00</p>
               </div>
               <div>
-                <button className="px-3 py-2 border-2 border-secondary hover:border-primary transition hover:bg-secondary  uppercase text-xl font-semibold w-full">
+                <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold uppercase transition hover:border-primary hover:bg-secondary hover:text-white">
                   Add To Cart
                 </button>
               </div>
             </div>
           </div>
-          <div className="absolute -top-3 right-0 h-9 bg-primary w-32 p-1 text-center text-base font-medium">
+          <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium text-white">
             <span> 200 Products</span>
           </div>
         </div>
-        <div className="group bg-secondary-light w-full relative">
+        <div className="group relative w-full bg-primary/20 dark:bg-secondary-light">
           <div className="flex flex-row p-3">
             <div className="basis-full">
-              <div className="flex justify-center items-center relative z-0 h-64">
+              <div className="relative z-0 flex h-64 items-center justify-center">
                 <div>
                   <Image src={Image08} width={200} alt="" />
                 </div>
-                <div className="group group-hover:bg-secondary/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-white font-semibold">
-                  <div className="opacity-0 group-hover:opacity-100 bottom-0 absolute bg-primary w-full text-center z-20">
+                <div className="group absolute inset-0 z-10 flex items-center justify-center text-2xl font-semibold text-white duration-300 group-hover:bg-secondary/50">
+                  <div className="absolute bottom-0 z-20 w-full bg-primary text-center opacity-0 group-hover:opacity-100">
                     <button className="p-1">Quick View</button>
                   </div>
                 </div>
               </div>
 
-              <div className="text-2xl text-center font-semibold">
+              <div className="text-center text-2xl font-semibold">
                 <h3>Nikki Shoes</h3>
                 <p className="text-primary">$ 200.00</p>
               </div>
               <div>
-                <button className="px-3 py-2 border-2 border-secondary hover:border-primary transition hover:bg-secondary  uppercase text-xl font-semibold w-full">
+                <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold uppercase transition hover:border-primary hover:bg-secondary hover:text-white">
                   Add To Cart
                 </button>
               </div>
             </div>
           </div>
-          <div className="absolute -top-3 right-0 h-9 bg-primary w-32 p-1 text-center text-base font-medium">
+          <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium text-white">
             <span> 200 Products</span>
           </div>
         </div>
-        <div className="group bg-secondary-light w-full relative">
+        <div className="group relative w-full bg-primary/20 dark:bg-secondary-light">
           <div className="flex flex-row p-3">
             <div className="basis-full">
-              <div className="flex justify-center items-center relative z-0 h-64">
+              <div className="relative z-0 flex h-64 items-center justify-center">
                 <div>
                   <Image src={Image01} width={200} alt="" />
                 </div>
-                <div className="group group-hover:bg-secondary/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-white font-semibold">
-                  <div className="opacity-0 group-hover:opacity-100 bottom-0 absolute bg-primary w-full text-center z-20">
+                <div className="group absolute inset-0 z-10 flex items-center justify-center text-2xl font-semibold text-white duration-300 group-hover:bg-secondary/50">
+                  <div className="absolute bottom-0 z-20 w-full bg-primary text-center opacity-0 group-hover:opacity-100">
                     <button className="p-1">Quick View</button>
                   </div>
                 </div>
               </div>
 
-              <div className="text-2xl text-center font-semibold">
+              <div className="text-center text-2xl font-semibold">
                 <h3>Nikki Shoes</h3>
                 <p className="text-primary">$ 200.00</p>
               </div>
               <div>
-                <button className="px-3 py-2 border-2 border-secondary hover:border-primary transition hover:bg-secondary  uppercase text-xl font-semibold w-full">
+                <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold uppercase transition hover:border-primary hover:bg-secondary hover:text-white">
                   Add To Cart
                 </button>
               </div>
             </div>
           </div>
-          <div className="absolute -top-3 right-0 h-9 bg-primary w-32 p-1 text-center text-base font-medium">
+          <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium text-white">
             <span> 200 Products</span>
           </div>
         </div>
-        <div className="group bg-secondary-light w-full relative">
+        <div className="group relative w-full bg-primary/20 dark:bg-secondary-light">
           <div className="flex flex-row p-3">
             <div className="basis-full">
-              <div className="flex justify-center items-center relative z-0 h-64">
+              <div className="relative z-0 flex h-64 items-center justify-center">
                 <div>
                   <Image src={Image04} width={200} alt="" />
                 </div>
-                <div className="group group-hover:bg-secondary/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-white font-semibold">
-                  <div className="opacity-0 group-hover:opacity-100 bottom-0 absolute bg-primary w-full text-center z-20">
+                <div className="group absolute inset-0 z-10 flex items-center justify-center text-2xl font-semibold text-white duration-300 group-hover:bg-secondary/50">
+                  <div className="absolute bottom-0 z-20 w-full bg-primary text-center opacity-0 group-hover:opacity-100">
                     <button className="p-1">Quick View</button>
                   </div>
                 </div>
               </div>
 
-              <div className="text-2xl text-center font-semibold">
+              <div className="text-center text-2xl font-semibold">
                 <h3>Nikki Shoes</h3>
                 <p className="text-primary">$ 200.00</p>
               </div>
               <div>
-                <button className="px-3 py-2 border-2 border-secondary hover:border-primary transition hover:bg-secondary  uppercase text-xl font-semibold w-full">
+                <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold uppercase transition hover:border-primary hover:bg-secondary hover:text-white">
                   Add To Cart
                 </button>
               </div>
             </div>
           </div>
-          <div className="absolute -top-3 right-0 h-9 bg-primary w-32 p-1 text-center text-base font-medium">
+          <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium text-white">
             <span> 200 Products</span>
           </div>
         </div>
-        <div className="group bg-secondary-light w-full relative">
+        <div className="group relative w-full bg-primary/20 dark:bg-secondary-light">
           <div className="flex flex-row p-3">
             <div className="basis-full">
-              <div className="flex justify-center items-center relative z-0 h-64">
+              <div className="relative z-0 flex h-64 items-center justify-center">
                 <div>
                   <Image src={Image07} width={200} alt="" />
                 </div>
-                <div className="group group-hover:bg-secondary/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-white font-semibold">
-                  <div className="opacity-0 group-hover:opacity-100 bottom-0 absolute bg-primary w-full text-center z-20">
+                <div className="group absolute inset-0 z-10 flex items-center justify-center text-2xl font-semibold text-white duration-300 group-hover:bg-secondary/50">
+                  <div className="absolute bottom-0 z-20 w-full bg-primary text-center opacity-0 group-hover:opacity-100">
                     <button className="p-1">Quick View</button>
                   </div>
                 </div>
               </div>
 
-              <div className="text-2xl text-center font-semibold">
+              <div className="text-center text-2xl font-semibold">
                 <h3>Nikki Shoes</h3>
                 <p className="text-primary">$ 200.00</p>
               </div>
               <div>
-                <button className="px-3 py-2 border-2 border-secondary hover:border-primary transition hover:bg-secondary  uppercase text-xl font-semibold w-full">
+                <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold uppercase transition hover:border-primary hover:bg-secondary hover:text-white">
                   Add To Cart
                 </button>
               </div>
             </div>
           </div>
-          <div className="absolute -top-3 right-0 h-9 bg-primary w-32 p-1 text-center text-base font-medium">
+          <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium text-white">
             <span> 200 Products</span>
           </div>
         </div>
       </div>
-      <div className="text-center my-4">
-        <button className="bg-primary  hover:bg-secondary border-primary border-2  font-semibold  -skew-x-12 w-24 p-1  hover:skew-x-0 ">
+      <div className="my-4 text-center">
+        <button className="w-24  -skew-x-12 border-2 border-primary  bg-primary  p-1 font-semibold hover:skew-x-0  hover:bg-secondary ">
           More
         </button>
       </div>

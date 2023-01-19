@@ -44,7 +44,7 @@ function ShopPage() {
         {/* wrapper */}
         <div className="grid grid-cols-1 items-start gap-6 pt-4 pb-16 lg:grid-cols-4">
           {/* Filter */}
-          <div className="col-span-1 hidden overflow-hidden bg-secondary-light p-2 px-4 pb-6 shadow-md shadow-gray-500 lg:block">
+          <div className="col-span-1 hidden overflow-hidden bg-white p-2 px-4 pb-6 shadow-md shadow-gray-500 dark:bg-secondary-light lg:block">
             <FilterSection />
           </div>
           <div className="col-span-3">
@@ -84,10 +84,10 @@ function ShopPage() {
                   </div>
                 </div>
                 <div className="hidden gap-2 lg:flex">
-                  <button className="bg-primary p-2">
+                  <button className="bg-primary p-2 text-white">
                     <FaList />
                   </button>
-                  <button className="bg-primary p-2">
+                  <button className="bg-primary p-2 text-white">
                     <FaTh />
                   </button>
                 </div>
@@ -95,7 +95,7 @@ function ShopPage() {
             </div>
             <div>
               <div className="my-4 mx-auto grid grid-cols-1 justify-center gap-6 md:grid-cols-2 lg:grid-cols-3">
-                <div className="group relative w-full bg-secondary-light">
+                <div className="group relative w-full bg-primary/20 dark:bg-secondary-light">
                   <div className="flex flex-row p-3">
                     <div className="basis-full">
                       <div className="relative z-0 flex h-64 items-center justify-center">
@@ -121,17 +121,17 @@ function ShopPage() {
                         <p className="text-primary">$ 200.00</p>
                       </div>
                       <div>
-                        <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold  uppercase transition hover:border-primary hover:bg-secondary">
+                        <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold  uppercase transition hover:border-primary hover:bg-secondary hover:text-white">
                           Add To Cart
                         </button>
                       </div>
                     </div>
                   </div>
-                  <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium">
+                  <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium text-white">
                     <span> 200 Products</span>
                   </div>
                 </div>
-                <div className="group relative w-full  bg-secondary-light">
+                <div className="group relative w-full bg-primary/20 dark:bg-secondary-light">
                   <div className="flex flex-row p-3">
                     <div className="basis-full">
                       <div className="relative z-0 flex h-64 items-center justify-center">
@@ -152,17 +152,17 @@ function ShopPage() {
                         <p className="text-primary">$ 200.00</p>
                       </div>
                       <div>
-                        <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold  uppercase transition hover:border-primary hover:bg-secondary">
+                        <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold  uppercase transition hover:border-primary hover:bg-secondary hover:text-white">
                           Add To Cart
                         </button>
                       </div>
                     </div>
                   </div>
-                  <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium">
+                  <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium text-white">
                     <span> 200 Products</span>
                   </div>
                 </div>
-                <div className="group relative w-full bg-secondary-light">
+                <div className="group relative w-full bg-primary/20 dark:bg-secondary-light">
                   <div className="flex flex-row p-3">
                     <div className="basis-full">
                       <div className="relative z-0 flex h-64 items-center justify-center">
@@ -181,17 +181,17 @@ function ShopPage() {
                         <p className="text-primary">$ 200.00</p>
                       </div>
                       <div>
-                        <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold  uppercase transition hover:border-primary hover:bg-secondary">
+                        <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold  uppercase transition hover:border-primary hover:bg-secondary hover:text-white">
                           Add To Cart
                         </button>
                       </div>
                     </div>
                   </div>
-                  <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium">
+                  <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium text-white">
                     <span> 200 Products</span>
                   </div>
                 </div>
-                <div className="group relative w-full bg-secondary-light">
+                <div className="group relative w-full bg-primary/20 dark:bg-secondary-light">
                   <div className="flex flex-row p-3">
                     <div className="basis-full">
                       <div className="relative z-0 flex h-64 items-center justify-center">
@@ -210,17 +210,17 @@ function ShopPage() {
                         <p className="text-primary">$ 200.00</p>
                       </div>
                       <div>
-                        <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold  uppercase transition hover:border-primary hover:bg-secondary">
+                        <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold  uppercase transition hover:border-primary hover:bg-secondary hover:text-white">
                           Add To Cart
                         </button>
                       </div>
                     </div>
                   </div>
-                  <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium">
+                  <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium text-white">
                     <span> 200 Products</span>
                   </div>
                 </div>
-                <div className="group relative w-full bg-secondary-light">
+                <div className="group relative w-full bg-primary/20 dark:bg-secondary-light">
                   <div className="flex flex-row p-3">
                     <div className="basis-full">
                       <div className="relative z-0 flex h-64 items-center justify-center">
@@ -239,17 +239,17 @@ function ShopPage() {
                         <p className="text-primary">$ 200.00</p>
                       </div>
                       <div>
-                        <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold  uppercase transition hover:border-primary hover:bg-secondary">
+                        <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold  uppercase transition hover:border-primary hover:bg-secondary hover:text-white">
                           Add To Cart
                         </button>
                       </div>
                     </div>
                   </div>
-                  <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium">
+                  <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium text-white">
                     <span> 200 Products</span>
                   </div>
                 </div>
-                <div className="group relative w-full bg-secondary-light">
+                <div className="group relative w-full bg-primary/20 dark:bg-secondary-light">
                   <div className="flex flex-row p-3">
                     <div className="basis-full">
                       <div className="relative z-0 flex h-64 items-center justify-center">
@@ -268,17 +268,17 @@ function ShopPage() {
                         <p className="text-primary">$ 200.00</p>
                       </div>
                       <div>
-                        <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold  uppercase transition hover:border-primary hover:bg-secondary">
+                        <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold  uppercase transition hover:border-primary hover:bg-secondary hover:text-white">
                           Add To Cart
                         </button>
                       </div>
                     </div>
                   </div>
-                  <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium">
+                  <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium text-white">
                     <span> 200 Products</span>
                   </div>
                 </div>
-                <div className="group relative w-full bg-secondary-light">
+                <div className="group relative w-full bg-primary/20 dark:bg-secondary-light">
                   <div className="flex flex-row p-3">
                     <div className="basis-full">
                       <div className="relative z-0 flex h-64 items-center justify-center">
@@ -297,17 +297,17 @@ function ShopPage() {
                         <p className="text-primary">$ 200.00</p>
                       </div>
                       <div>
-                        <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold  uppercase transition hover:border-primary hover:bg-secondary">
+                        <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold  uppercase transition hover:border-primary hover:bg-secondary hover:text-white">
                           Add To Cart
                         </button>
                       </div>
                     </div>
                   </div>
-                  <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium">
+                  <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium text-white">
                     <span> 200 Products</span>
                   </div>
                 </div>
-                <div className="group relative w-full bg-secondary-light">
+                <div className="group relative w-full bg-primary/20 dark:bg-secondary-light">
                   <div className="flex flex-row p-3">
                     <div className="basis-full">
                       <div className="relative z-0 flex h-64 items-center justify-center">
@@ -326,17 +326,17 @@ function ShopPage() {
                         <p className="text-primary">$ 200.00</p>
                       </div>
                       <div>
-                        <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold  uppercase transition hover:border-primary hover:bg-secondary">
+                        <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold  uppercase transition hover:border-primary hover:bg-secondary hover:text-white">
                           Add To Cart
                         </button>
                       </div>
                     </div>
                   </div>
-                  <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium">
+                  <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium text-white">
                     <span> 200 Products</span>
                   </div>
                 </div>
-                <div className="group relative w-full bg-secondary-light">
+                <div className="group relative w-full bg-primary/20 dark:bg-secondary-light">
                   <div className="flex flex-row p-3">
                     <div className="basis-full">
                       <div className="relative z-0 flex h-64 items-center justify-center">
@@ -355,13 +355,13 @@ function ShopPage() {
                         <p className="text-primary">$ 200.00</p>
                       </div>
                       <div>
-                        <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold  uppercase transition hover:border-primary hover:bg-secondary">
+                        <button className="w-full border-2 border-secondary px-3 py-2 text-xl font-semibold  uppercase transition hover:border-primary hover:bg-secondary hover:text-white">
                           Add To Cart
                         </button>
                       </div>
                     </div>
                   </div>
-                  <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium">
+                  <div className="absolute -top-3 right-0 h-9 w-32 bg-primary p-1 text-center text-base font-medium text-white">
                     <span> 200 Products</span>
                   </div>
                 </div>

@@ -62,7 +62,7 @@ const CartMobilePopOver = () => {
         popoverBtn={
           <div className="relative">
             <FaCartPlus size={24} />
-            <span className="absolute -right-2 -top-1 h-4 w-4 rounded-full bg-rose-500 text-center text-xs">
+            <span className="absolute -right-2 -top-1 h-4 w-4 rounded-full border border-secondary bg-primary  text-center text-xs text-white dark:border-white ">
               {products.length}
             </span>
           </div>
@@ -130,7 +130,7 @@ const CartMobilePopOver = () => {
           <button className="mt-3 w-full border border-transparent bg-primary py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-secondary-light focus:outline-none focus:ring-2 focus:ring-primary">
             Checkout
           </button>
-          <button className="mt-1 w-full border border-transparent  py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-secondary-light focus:outline-none focus:ring-2  ">
+          <button className="mt-1 w-full border border-transparent  py-2 px-4 text-sm font-medium text-secondary shadow-sm hover:bg-secondary-light hover:text-white focus:outline-none focus:ring-2 dark:text-white  ">
             Continue to Shopping
           </button>
         </div>

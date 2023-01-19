@@ -24,6 +24,7 @@ import {
 } from 'react-icons/fa';
 import { VscMail } from 'react-icons/vsc';
 import Logo from '../assets/Logo.png';
+import Logo2 from '../assets/images/icons/Logo.png';
 import { navMenu, secondaryMenu } from '../pages/api/mode';
 import Cart from './view/shop-page/cart';
 
@@ -34,8 +35,11 @@ export const Footer = () => {
         <div className=" grid grid-cols-1 gap-0 py-6 md:grid-cols-2 md:gap-6  lg:grid-cols-4">
           <div className="col-span-1  my-2 flex justify-center text-center md:block ">
             <div>
-              <div className="w-44">
+              <div className="hidden w-44 dark:block">
                 <Image src={Logo} alt="logo" />
+              </div>
+              <div className="block w-44 dark:hidden">
+                <Image width={130} src={Logo2} alt="logo" />
               </div>
               <div className=" my-2">
                 <div className="flex items-center gap-2 px-2 text-sm">
@@ -64,7 +68,7 @@ export const Footer = () => {
             <div className="grid grid-cols-2  gap-4 lg:grid-cols-4 ">
               {navMenu.map((nav, index) => (
                 <div key={index} className="col-span-1">
-                  <h2 className="text-lg font-semibold uppercase text-sky-500">
+                  <h2 className="text-lg font-semibold uppercase text-primary">
                     {nav.mainItem}
                   </h2>
                   {nav.subItem.map((subNav, index) => (
@@ -86,16 +90,16 @@ export const Footer = () => {
             <div className=" mt-5">
               <input
                 placeholder="Enter Email"
-                className="w-full border-0 border-b border-white   bg-inherit focus:outline-none"
+                className="w-full border-0 border-b border-secondary-light bg-inherit    focus:outline-none dark:border-white"
               />
               <div className="mt-2 text-center">
-                <button className="bg-sky-600  py-1 px-2 uppercase text-white">
+                <button className="bg-primary  py-1 px-2 uppercase text-white">
                   Submit
                 </button>
               </div>
             </div>
             <div className=" mt-4 text-[0.8rem] font-semibold text-neutral-400">
-              <input type="checkbox" className=" mr-1 bg-sky-800 " />
+              <input type="checkbox" className=" mr-1 bg-white " />
               <span>
                 Yes. I'd like to receive marketing emails from Edge and agree to
                 it's
@@ -114,7 +118,7 @@ export const Footer = () => {
           <div>All Rights Reserved 2023</div>
         </div>
         {/* Bootom Fixed Menu for Small Device */}
-        <div className="fixed bottom-0 left-0  grid h-12 w-full grid-cols-5 divide-x bg-primary shadow-sm shadow-white lg:hidden ">
+        <div className="fixed bottom-0 left-0  grid h-12 w-full grid-cols-5 divide-x bg-primary text-white shadow-sm shadow-white  lg:hidden ">
           <div className="flex flex-col items-center justify-center py-2">
             <Link href="/">
               <FaHome size={20} />
